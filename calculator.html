@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <title>Simple  Calculator</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <label>Enter First Value </label>
+        <input type="text" id="f_value" name="">
+    </td>
+    </td>
+      <label>Enter Second Value </label>
+      <input type="text" id="s_value" name="">
+    </td>
+    </td>
+      <label>Result </label>
+      <input type="text" id="Result" name="">
+    <td>
+  </tr>
+  
+  </table>
+  <input type="button" id="add" value="Adition" onclick="calculate(1);" name="">
+  <input type="button" id="sub" value="Subtraction" onclick="calculate(2);" name="">
+  <input type="button" id="mul" value="Multiplication" onclick="calculate(3);" name="">
+  <input type="button" id="divi" value="Division" onclick="calculate(4);" name="">
+  <script type="text/javascript">
+    function calculate(choice) {
+      var n1 = document.getElementById ("f_value") .value * 1;
+      var n2 = document.getElementById ("s_value") .value * 1;
+      var fresuit;
+      switch (choice) {
+        case 1:
+        fresuit = n1 + n2;
+        break;
+        case 2:
+        fresuit = n1 - n2;
+        break;
+        case 3:
+        fresuit = n1 * n2;
+        break;
+        case 4:
+        fresuit = n1 / n2;
+        break;  
+      } 
+       document.getElementById ("Result") .value =  fresuit;
+}
+ </script>  
+
+</body>
+</html>
